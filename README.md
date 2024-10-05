@@ -58,7 +58,7 @@ Screenshoot:
   <a href="https://sociabuzz.com/bobbyunknown/tribe">
     <img src="https://img.shields.io/badge/Sociabuzz-1DA1F2?style=for-the-badge&logo=sociabuzz&logoColor=white" alt="Sociabuzz">
   </a>
-  <a href="https://saweria.co/widgets/qr?streamKey=48ea6792454c7732924b663381c69521">
+  <a href="https://saweria.co/bobbyunknown">
     <img src="https://img.shields.io/badge/Saweria-FFA500?style=for-the-badge&logo=saweria&logoColor=white" alt="Saweria">
   </a>
 </p>
