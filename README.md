@@ -1,6 +1,6 @@
 Openwrt untuk amlogic
 <h1>InsomWRT</h1>
-<p>Share firmware openwrt 23.05.05<br>
+<p>Firmware openwrt 23.05.05<br>
 B860H WIFI ON sudah test<br>
 OPIZ 3 WIFI ON sudah test<br>
 H680P belum test gak punya device nya</p>
