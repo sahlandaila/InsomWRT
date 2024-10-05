@@ -38,7 +38,20 @@ DBAI "Terima kasih banyak sepepuh bantu fix wifi"<br>
 IndoWRT</p>
 <br>
 
-Screenshoot
+Screenshoot:
+<details>
+<summary>Klik untuk melihat screenshot</summary>
+
+![Tangkapan Layar 1](img/Snag_b3a08e.png)
+![Tangkapan Layar 2](img/Snag_b3a0ec.png)
+![Tangkapan Layar 3](img/Snag_b3a15a.png)
+![Tangkapan Layar 4](img/Snag_b3a254.png)
+![Tangkapan Layar 5](img/Snag_b3a2f0.png)
+![Tangkapan Layar 6](img/Snag_b3a36d.png)
+![Tangkapan Layar 7](img/Snag_b3a409.png)
+
+</details>
+
 
 
 
