@@ -1,0 +1,2 @@
+# InsomWRT
+Openwrt untuk amlogic
