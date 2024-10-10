@@ -33,9 +33,18 @@ jobs:
         with:
           ref: main
           
-      - name: Set permissions and run build script
+      - name: Set permissions
         run: |
           chmod 775 ulo build.sh
+      
+      - name: Download rootfs
+        run: |
+          wget https://github.com/sugengtd7/rootfs/releases/download/23.05.05/InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz
+          mkdir -p ULO-Builder/rootfs
+          mv InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz ULO-Builder/rootfs/
+        
+      - name: Run Script  
+        run: |
           ./build.sh
           
       - name: Check output directory structure and file sizes
