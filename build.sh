@@ -20,6 +20,7 @@ chipsets=(
     "s905x2"
     "s905x3"
     "s905x4"
+)
 
 rootfs=(
     "OpenWrt-23.05.4-A2WRT-armsr-armv8-generic-rootfs.tar.gz"
