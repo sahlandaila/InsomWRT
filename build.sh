@@ -27,7 +27,7 @@ chipsets=(
 )
 
 rootfs=(
-    "OpenWrt-23.05.4-A2WRT-armsr-armv8-generic-rootfs.tar.gz"
+    "InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz"
 )
 
 # Tetapkan ukuran rootfs

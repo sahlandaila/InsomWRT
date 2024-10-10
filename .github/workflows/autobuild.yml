@@ -56,5 +56,9 @@ jobs:
           body: |
             ##  OpenWRT Release for multiple devices
             ULO-Builder Release from Github Workflow
+            
+            ## Login
+            - user: root
+            - pass: dbai
         env:
           ACTIONS_STEP_DEBUG: true
