@@ -72,7 +72,8 @@ jobs:
           overwrite: true
           body: |
             ##  OpenWRT Release for multiple devices
-            ULO-Builder Release from Github Workflow
+            ULO-Builder Release dari Github Workflow
+            Tanggal Build: ${{ steps.date.outputs.date }}
             ## Login
             - user: root
             - pass: dbai
