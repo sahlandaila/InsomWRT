@@ -1,0 +1,37 @@
+#
+# Copyright (C) 2024 nosignals
+#
+name: ULO Autobuilder
+
+on:
+  workflow_dispatch:
+
+jobs: 
+  build_ipk:
+    permissions:
+      contents: write
+    name: ULO Autobuilder
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          
+      - name: Set permissions and run build script
+        run: |
+          chmod 775 ulo build.sh
+          ./build.sh
+          
+      - name: Upload release assets
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./out/*
+          tag: firmware-release-${{ github.run_number }}
+          file_glob: true
+          overwrite: true
+          body: |
+            ##  OpenWRT Release for multiple devices
+            ULO-Builder Release from Github Workflow
