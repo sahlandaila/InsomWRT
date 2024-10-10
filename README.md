@@ -38,7 +38,7 @@ Firmware openwrt 23.05.05
 - MihomoTproxy
 
 # Tambahan
-Jika ingin menggunakan passwall silakan install depensi nya dulu
+Jika ingin menggunakan Passwall, silakan install dependensi nya terlebih dahulu
 ```
 opkg update && opkg install ipset ipt2socks iptables iptables-legacy iptables-mod-iprange \
 iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 \
@@ -52,9 +52,9 @@ opkg install v2ray-extra v2ray-geoip v2ray-geosite v2ray-ctl xray-geodata
 
 
 ***Catatan: Jika mengalami masalah dengan ttyd tidak bisa di buka:***
-1. - Klik menu System/Startup
-2. - Scroll ke bawah cari ttyd
-3. - Klik tombol Restart
+1. Klik menu System/Startup
+2. Scroll ke bawah cari ttyd
+3. Klik tombol Restart
 
 **Login:**
 - user: root
