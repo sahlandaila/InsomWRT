@@ -7,7 +7,7 @@ Openwrt untuk amlogic
 Firmware openwrt 23.05.05
 - B860H WIFI ON sudah test
 - OPIZ 3 WIFI ON sudah test
-- H680P belum test gak punya device nya
+- H680P dan yang lain nya belum test gak punya device nya
 
 ## Sudah di tambahkan
 
