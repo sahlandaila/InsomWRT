@@ -40,13 +40,13 @@ jobs:
       - name: Unduh dan pindahkan rootfs tambahan
         run: |
           echo "Mulai mengunduh rootfs tambahan..."
-          curl -LO https://github.com/sugengtd7/rootfs/releases/download/23.05.05/InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz
+          curl -LO https://github.com/
           
           echo "Membuat direktori rootfs jika belum ada..."
           mkdir -p ./rootfs
           
           echo "Memindahkan rootfs tambahan ke direktori rootfs..."
-          mv InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz ./rootfs/
+          mv OpenWRT-23.05.05-armsr-armv8.tar.gz ./rootfs/
     
       - name: Mengatur tanggal
         id: date
