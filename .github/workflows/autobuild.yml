@@ -37,25 +37,6 @@ jobs:
         run: |
           chmod 775 ulo build.sh
 
-      - name: Unduh dan ekstrak ULO repository
-        run: |
-          echo "Mengunduh ULO repository..."
-          curl -L https://github.com/bobbyunknown/ULO-repository/archive/refs/heads/main.zip -o ulo-repo.zip
-          
-          echo "Mengekstrak ULO repository..."
-          unzip ulo-repo.zip
-          
-          echo "Memindahkan file-file ke struktur yang diharapkan..."
-          mv ULO-repository-main/kernel ./core/
-          mv ULO-repository-main/rootfs/* ./rootfs/
-          mv ULO-repository-main/firmware ./core/root/lib/
-          
-          echo "Membersihkan file sementara..."
-          rm -rf ULO-repository-main ulo-repo.zip
-          
-          echo "Struktur direktori setelah ekstraksi ULO repository:"
-          ls -R
-
       - name: Unduh rootfs tambahan
         run: |
           echo "Mulai mengunduh rootfs tambahan..."
