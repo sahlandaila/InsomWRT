@@ -2,7 +2,10 @@
 ![Downloads](https://img.shields.io/github/downloads/bobbyunknown/InsomWRT/total.svg)
 ![Views](https://komarev.com/ghpvc/?username=bobbyunknown&repo=InsomWRT)
 
-Openwrt untuk amlogic
+### Telegram group:
+[![SanTech](https://img.shields.io/badge/SanTech-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+TuLCASzJrVJmNzM1)
+
+**OpenWRT untuk perangkat berbasis ARM**
 
 Firmware openwrt 23.05.05
 - B860H WIFI ON sudah test
