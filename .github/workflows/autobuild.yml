@@ -51,6 +51,10 @@ jobs:
           echo "Isi direktori rootfs setelah penambahan:"
           ls -l ./rootfs/
 
+      - name: Mengatur tanggal
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
       - name: Menjalankan script    
         run: |
           ./build.sh
