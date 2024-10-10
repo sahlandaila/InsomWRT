@@ -1,4 +1,6 @@
 # InsomWRT
+![Downloads](https://img.shields.io/github/downloads/bobbyunknown/InsomWRT/total.svg)
+![Views](https://komarev.com/ghpvc/?username=bobbyunknown&repo=InsomWRT)
 
 Openwrt untuk amlogic
 
