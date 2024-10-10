@@ -50,7 +50,7 @@ opkg install v2ray-extra v2ray-geoip v2ray-geosite v2ray-ctl xray-geodata
 
 ***Catatan: Jika mengalami masalah dengan ttyd tidak bisa di buka:***
 1. - Klik menu System/Startup
-2. - Scroll ke bawah 
+2. - Scroll ke bawah cari ttyd
 3. - Klik tombol Restart
 
 **Login:**
