@@ -43,22 +43,22 @@ jobs:
           curl -LO https://github.com/sugengtd7/rootfs/releases/download/23.05.05/InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz
           echo "File berhasil diunduh."
           
-          echo "Membuat direktori ULO-Builder/rootfs..."
-          mkdir -p ULO-Builder/rootfs
+          echo "Membuat direktori rootfs..."
+          mkdir -p rootfs
           echo "Direktori berhasil dibuat."
           
-          echo "Memindahkan file ke ULO-Builder/rootfs/..."
-          mv InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz ULO-Builder/rootfs/
+          echo "Memindahkan file ke rootfs/..."
+          mv InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz rootfs/
           echo "File berhasil dipindahkan."
           
-          echo "Memeriksa isi direktori ULO-Builder/rootfs/..."
-          ls -l ULO-Builder/rootfs/
+          echo "Memeriksa isi direktori rootfs/..."
+          ls -l rootfs/
           
-          echo "Memeriksa isi direktori ULO-Builder/..."
-          ls -R ULO-Builder/
+          echo "Memeriksa isi direktori saat ini..."
+          ls -R
 
       - name: Menjalankan script    
-        run:
+        run: |
           ./build.sh
           
       - name: Memeriksa struktur direktori keluaran dan ukuran file
