@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Script untuk build firmware muiti device untuk ulo builder
+# BobbyUnkown https://github.com/bobbyunknown
+
+
 # Daftar hipset (model)
 chipsets=(
     "h5-orangepi-pc2" 

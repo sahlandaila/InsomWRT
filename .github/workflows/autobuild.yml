@@ -1,6 +1,10 @@
 #
-# Copyright (C) 2024 nosignals
-#
+# Copyright (C) 2024 nosignals https://github.com/nosignals
+# https://github.com/armarchindo/ULO-Builder
+# https://github.com/sib0ndt
+# https://github.com/Haris131
+# BobbyUnkown https://github.com/bobbyunknown
+# 
 name: ULO Autobuilder
 
 on:
