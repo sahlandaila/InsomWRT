@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       
-      - name: Update and Install Dependencies
+      - name: Memperbarui dan Memasang Dependensi
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
@@ -33,28 +33,51 @@ jobs:
         with:
           ref: main
           
-      - name: Set permissions
+      - name: Atur izin
         run: |
           chmod 775 ulo build.sh
-      
-      - name: Download rootfs
+
+      - name: Unduh rootfs
         run: |
-          wget https://github.com/sugengtd7/rootfs/releases/download/23.05.05/InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz
+          echo "Mulai mengunduh file..."
+          curl -LO https://github.com/sugengtd7/rootfs/releases/download/23.05.05/InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz
+          if [ $? -ne 0 ]; then
+            echo "Gagal mengunduh file. Keluar."
+            exit 1
+          fi
+          echo "File berhasil diunduh."
+          
+          echo "Membuat direktori ULO-Builder/rootfs..."
           mkdir -p ULO-Builder/rootfs
+          if [ $? -ne 0 ]; then
+            echo "Gagal membuat direktori. Keluar."
+            exit 1
+          fi
+          echo "Direktori berhasil dibuat."
+          
+          echo "Memindahkan file ke ULO-Builder/rootfs/..."
           mv InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz ULO-Builder/rootfs/
-        
-      - name: Run Script  
-        run: |
+          if [ $? -ne 0 ]; then
+            echo "Gagal memindahkan file. Keluar."
+            exit 1
+          fi
+          echo "File berhasil dipindahkan."
+          
+          echo "Memeriksa isi direktori ULO-Builder/rootfs/..."
+          ls -l ULO-Builder/rootfs/
+
+      - name: Menjalankan script    
+        run:
           ./build.sh
           
-      - name: Check output directory structure and file sizes
+      - name: Memeriksa struktur direktori keluaran dan ukuran file
         run: |
           echo "Directory structure:"
           tree ./out
           echo "File sizes:"
           find ./out -type f -name "*.img.gz" -exec du -sh {} +
           
-      - name: Upload release assets
+      - name: Mengunggah aset rilis
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -65,7 +88,6 @@ jobs:
           body: |
             ##  OpenWRT Release for multiple devices
             ULO-Builder Release from Github Workflow
-            
             ## Login
             - user: root
             - pass: dbai
