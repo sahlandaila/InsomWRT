@@ -1,6 +1,5 @@
 # InsomWRT
 ![Downloads](https://img.shields.io/github/downloads/bobbyunknown/InsomWRT/total.svg)
-![Views](https://komarev.com/ghpvc/?username=bobbyunknown&repo=InsomWRT)
 
 ### Telegram group:
 [![SanTech](https://img.shields.io/badge/SanTech-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+TuLCASzJrVJmNzM1)
