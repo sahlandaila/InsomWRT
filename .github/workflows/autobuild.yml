@@ -16,7 +16,7 @@ jobs:
       contents: write
       actions: write
     name: ULO Autobuilder
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       
       - name: Memperbarui dan Memasang Dependensi
