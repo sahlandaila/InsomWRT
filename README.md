@@ -1,3 +1,5 @@
+# ULO-Repository
+ULO repository for ULO Builder
 # InsomWRT
 ![Downloads](https://img.shields.io/github/downloads/bobbyunknown/InsomWRT/total.svg)
 
@@ -6,75 +8,58 @@
 
 **OpenWRT untuk perangkat berbasis ARM**
 
-Firmware openwrt 23.05.05
-- B860H WIFI ON sudah test
-- OPIZ 3 WIFI ON sudah test
-- H680P dan yang lain nya belum test gak punya device nya
+Firmware openwrt 24.10.0-rc2
+- Hanya di test di orange pi zero 3
 
-## Sudah di tambahkan
+ ### Amlogic
+     s905x (HG680P, B860Hv1/v2)
+     s905x2 (HG680FJ, B860Hv5, MNC CYBORG001)
+     s905x3 
+     s905x4 (AKARI AX810, dll)
 
-- Netdata xos (maaf saya buang menu karna suka melebar)
-- Log viewer
-- Vnstat
-- Filemanagar (bisa search file)
-- Theme argon + config (sudah di tambahkan menu)
-- Rakitan manager
-- 3ginfo lite
-- modemband
-- Modeminfo
-- SMSTool
-- Droidnet
-- IPinfo
-- Mactodong
-- Netspeedtest (local & online)
-- Speedtest CLI ketik "speedtest.net"
-- ModemManager auto reconnect (by radenku)
+ ### Allwinner
+     H5 (Orange Pi Zero Plus 2, Orange Pi Zero Plus, Orange Pi Prime, Orange Pi PC2)
+     H6 (Orange Pi 1 Plus, Orange Pi Lite 2, Orange Pi 3 LTS, Orange Pi 3)
+     H616 (Orange Pi Zero 2)
+     H618 (Orange Pi Zero 3, Orange Pi Zero 2W)
+
+ ### Rockchip
+     RK3566 (Orange Pi 3B)
+     RK3588S (Orange Pi 5)
+     RK3588 (Orange Pi 5 Plus)
+
+### Aplikasi
+- System control
+- Tinyfilemanager
+- 3g info lite
+- Modem band
+- SMS Tools
 
 ### Tunnel
 - Nekoclash
 - Openclash
 - Passwall
-- MihomoTproxy
+- Insomclash
 
-# Tambahan
-Jika ingin menggunakan Passwall, silakan install dependensi nya terlebih dahulu
-```
-opkg update && opkg install ipset ipt2socks iptables iptables-legacy iptables-mod-iprange \
-iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 \
-coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc \
-microsocks resolveip tcping unzip
-```
-Install juga
-```
-opkg install v2ray-extra v2ray-geoip v2ray-geosite v2ray-ctl xray-geodata
-```
-
-
-***Catatan: Jika mengalami masalah dengan ttyd tidak bisa di buka:***
-1. Klik menu System/Startup
-2. Scroll ke bawah cari ttyd
-3. Klik tombol Restart
 
 **Login:**
 - user: root
-- pass: dbai
+- pass: tidakadapassword
 
 ## Thank to:
 - Allah SWT
-- DBAI (Terima kasih banyak sepepuh bantu fix wifi)
+- DBAI
 - IndoWRT
 
 ## Screenshot:
 <details>
 <summary>Klik untuk melihat screenshot</summary>
 
-![screenshot 1](img/Snag_b3a08e.png)
-![screenshot 2](img/Snag_b3a0ec.png)
-![screenshot 3](img/Snag_b3a15a.png)
-![screenshot 4](img/Snag_b3a254.png)
-![screenshot 5](img/Snag_b3a2f0.png)
-![screenshot 6](img/Snag_b3a36d.png)
-![screenshot 7](img/Snag_b3a409.png)
+![Overview](img/overview.png)
+![Filemanager](img/filemanager.png)
+![SMS Tools](img/sms-tools.png)
+![Tunnel](img/tunnel.png)
+
 
 </details>
 

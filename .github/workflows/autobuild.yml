@@ -40,7 +40,7 @@ jobs:
       - name: Unduh dan pindahkan rootfs tambahan
         run: |
           echo "Mulai mengunduh rootfs tambahan..."
-          curl -LO https://github.com/
+          curl -LO https://github.com/sugengtd7/rootfs/releases/download/24.05.05/openwrt-24.10.0-rc2-armsr-armv8-generic-rootfs.tar.gz
           
           echo "Membuat direktori rootfs jika belum ada..."
           mkdir -p ./rootfs
@@ -77,7 +77,7 @@ jobs:
             Tanggal Build: ${{ steps.date.outputs.date }}
             ## Login
             - user: root
-            - pass: dbai
+            - pass: tidakadapassword
             
             ### Amlogic
             s905x (HG680P, B860Hv1/v2)
