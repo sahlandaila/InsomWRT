@@ -69,7 +69,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file_glob: true
           file: out/**/*.img.gz
-          tag: InsomWRT 24.10.0-rc2
+          tag: InsomWRT-24.10.0-rc2
           overwrite: true
           body: |
             ##  OpenWRT Release for multiple devices
