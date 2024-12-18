@@ -27,7 +27,7 @@ chipsets=(
 )
 
 rootfs=(
-    "InsomWRT-OpenWRT-23.05.05-armsr-armv8.tar.gz"
+    "openwrt-24.10.0-rc2-armsr-armv8-generic-rootfs.tar.gz"
 )
 
 
