@@ -46,7 +46,7 @@ jobs:
           mkdir -p ./rootfs
           
           echo "Memindahkan rootfs tambahan ke direktori rootfs..."
-          mv OpenWRT-23.05.05-armsr-armv8.tar.gz ./rootfs/
+          mv openwrt-24.10.0-rc2-armsr-armv8-generic-rootfs.tar.gz ./rootfs/
     
       - name: Mengatur tanggal
         id: date
