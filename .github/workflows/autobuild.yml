@@ -40,13 +40,13 @@ jobs:
       - name: Unduh dan pindahkan rootfs tambahan
         run: |
           echo "Mulai mengunduh rootfs tambahan..."
-          curl -LO 
+          curl -LO https://github.com/sugengtd7/rootfs/releases/download/23.05.05/openwrt-23.05.5-armsr-armv8-generic-rootfs.tar.gz
           
           echo "Membuat direktori rootfs jika belum ada..."
           mkdir -p ./rootfs
           
           echo "Memindahkan rootfs tambahan ke direktori rootfs..."
-          mv openwrt-24.10.0-rc2-armsr-armv8-generic-rootfs.tar.gz ./rootfs/
+          mv openwrt-23.05.5-armsr-armv8-generic-rootfs.tar.gz ./rootfs/
     
       - name: Mengatur tanggal
         id: date
@@ -69,7 +69,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file_glob: true
           file: out/**/*.img.gz
-          tag: InsomWRT-24.10.0-rc2
+          tag: InsomWRT-23.05.05-stable
           overwrite: true
           body: |
             ##  OpenWRT Release for multiple devices
