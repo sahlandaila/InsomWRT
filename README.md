@@ -1,5 +1,3 @@
-# ULO-Repository
-ULO repository for ULO Builder
 # InsomWRT
 ![Downloads](https://img.shields.io/github/downloads/bobbyunknown/InsomWRT/total.svg)
 
@@ -8,8 +6,21 @@ ULO repository for ULO Builder
 
 **OpenWRT untuk perangkat berbasis ARM**
 
-Firmware openwrt 24.10.0-rc2
-- Hanya di test di orange pi zero 3
+## Openwrt 23.05.05 stable
+
+>Firmware ini di build tanpa aplikasi apapun, Hanya di install depedensi yang di butuhkan untuk ipk yang akan di install di quick setup. <br>
+Jadi user bisa install sendiri ipk yang di butuhkan di quick setup. <br>
+JIka ingin membuka luci bisa akses di **http://192.168.1.1/cgi-bin/luci/**
+
+
+
+### Fitur
+- Quick setup
+- Wifi on
+- Oh my bash
+- Tema material3 by [AngelaCooljx](https://github.com/AngelaCooljx/luci-theme-material3 "AngelaCooljx")
+- Led,hat
+- Dll
 
  ### Amlogic
      s905x (HG680P, B860Hv1/v2)
@@ -28,19 +39,6 @@ Firmware openwrt 24.10.0-rc2
      RK3588S (Orange Pi 5)
      RK3588 (Orange Pi 5 Plus)
 
-### Aplikasi
-- System control
-- Tinyfilemanager
-- 3g info lite
-- Modem band
-- SMS Tools
-
-### Tunnel
-- Nekoclash
-- Openclash
-- Passwall
-- Insomclash
-
 
 **Login:**
 - user: root
@@ -55,10 +53,13 @@ Firmware openwrt 24.10.0-rc2
 <details>
 <summary>Klik untuk melihat screenshot</summary>
 
-![Overview](img/overview.png)
-![Filemanager](img/filemanager.png)
-![SMS Tools](img/sms-tools.png)
-![Tunnel](img/tunnel.png)
+![Welcome](img/welcome.png)
+![About](img/about.png)
+![install App](img/install-app.png)
+![install Theme](img/install-theme.png)
+![Customize](img/customize.png)
+![Luci](img/luci.png)
+![ttyd](img/ttyd.png)
 
 
 </details>
@@ -71,5 +72,3 @@ Firmware openwrt 24.10.0-rc2
 ## Build
 Menggunakan [ULO-Builder](https://github.com/armarchindo/ULO-Builder)
 ## Lisensi
-
-Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk detailnya.
