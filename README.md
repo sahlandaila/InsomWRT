@@ -71,4 +71,3 @@ JIka ingin membuka luci bisa akses di **http://192.168.1.1/cgi-bin/luci/**
 
 ## Build
 Menggunakan [ULO-Builder](https://github.com/armarchindo/ULO-Builder)
-## Lisensi
