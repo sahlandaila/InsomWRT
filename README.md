@@ -10,8 +10,10 @@
 
 >Firmware ini di build tanpa aplikasi apapun, Hanya di install depedensi yang di butuhkan untuk ipk yang akan di install di quick setup. <br>
 Jadi user bisa install sendiri ipk yang di butuhkan di quick setup. <br>
-JIka ingin membuka luci bisa akses di **http://192.168.1.1/cgi-bin/luci/**
+Jika ingin membuka luci bisa akses di **http://192.168.1.1/cgi-bin/luci/** <br>
 
+***Note:*** <br>
+Jika tidak masuk di quick setup clear cache browser atau http://192.168.1.1/quick-setup
 
 
 ### Fitur
